@@ -33,6 +33,51 @@ body::before {
   animation: heartbeat 3s infinite; 
 }
 
+/* For screens smaller than 768px (mobile devices) */
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 1em; /* Adjust the font size for mobile */
+  }
+
+  .navbar {
+    flex-direction: column; /* Stack navbar links vertically on mobile */
+    align-items: center;
+  }
+
+  .icons-container {
+    flex-direction: column; /* Stack icons vertically */
+    margin-left: 0;
+  }
+
+  .content {
+    padding: 20px; /* Adjust padding for smaller screens */
+  }
+
+  .sidebar {
+    display: none; /* Hide the sidebar on mobile */
+  }
+
+  .profile-image {
+    margin-top: 20px; /* Adjust spacing for profile image */
+  }
+
+  .logo img {
+    width: 100px; /* Adjust logo size for mobile */
+  }
+
+  .about h3 {
+    font-size: 1.3em; /* Adjust heading size */
+  }
+
+  .about p {
+    font-size: 1em; /* Adjust paragraph font size */
+  }
+
+  .btn {
+    width: 100%; /* Make the button span the full width */
+  }
+}
+
 /* Heartbeat animation */
 @keyframes heartbeat {
   0%, 100% {
