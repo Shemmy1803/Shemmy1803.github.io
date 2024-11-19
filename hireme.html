@@ -109,24 +109,121 @@
     }
 
     .resume-image {
-      max-width: 500px; /* Limit the width of the image */
+      max-width: 500px; 
       border: 3px solid #917ae0;
       border-radius: 0px;
     }
 
-    .download-btn {
-      background-color: #23395d;
-      color: #fff;
-      padding: 15px 30px;
-      text-decoration: none;
-      font-size: 1em;
-      border-radius: 5px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    }
+  /* Add animation to download button */
+.download-btn {
+  background-color: #23395d;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 0.9em;
+  border-radius: 5px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  margin-top: 10px;
+  text-align: center;
+  transform: translateY(0); 
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease; 
+}
 
-    .download-btn:hover {
-      background-color: #203354;
-    }
+.download-btn:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}
+
+
+    @media screen and (max-width: 768px) {
+  /* Prevent horizontal scrolling */
+  body {
+    overflow-x: hidden; 
+  }
+
+  /* Navbar adjustments */
+  .navbar {
+    text-align: center;
+    padding: 20px 10px;
+    margin-left: 0;
+    font-size: 0.9em;
+  }
+
+  .navbar a {
+    display: inline-block;
+    margin: 10px 5px;
+  }
+
+  .nav-btn {
+  position: absolute;
+  top: 30px; 
+  right: 50px;
+  padding: 8px 12px;
+  font-size: 0.9em;
+  background: linear-gradient(to left, #010017, #23395d);
+  border-radius: 5px;
+  z-index: 200; 
+}
+
+/* Wrapping container for image and button */
+.resume-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  margin-top: 20px;
+}
+
+.resume-image {
+  max-width: 90%; 
+  border: 3px solid #917ae0;
+  border-radius: 0px;
+  margin-bottom: 10px; 
+}
+
+.download-btn {
+  background-color: #23395d;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 0.9em;
+  border-radius: 5px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  margin-top: 10px; 
+  text-align: center;
+}
+
+  /* List items and icons */
+  ul li {
+    font-size: 1em; 
+    margin-bottom: 15px; 
+    padding: 8px;
+  }
+
+  ul li i {
+    margin-right: 10px; 
+  }
+
+  /* Logo adjustments */
+  .logo {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 10px;
+    padding-left: 10px;
+  }
+
+  .logo img {
+    width: 120px; 
+    height: auto;
+  }
+
+  h3 {
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+}
+
   </style>
 </head>
 <body>

@@ -125,7 +125,81 @@
   padding: 10px; 
 }
 
-   
+@media screen and (max-width: 768px) {
+  /* Prevent horizontal scrolling */
+  body {
+    overflow-x: hidden; 
+  }
+
+  /* Navbar adjustments */
+  .navbar {
+    text-align: center;
+    padding: 20px 10px;
+    margin-left: 0;
+    font-size: 0.9em;
+  }
+
+  .navbar a {
+    display: inline-block;
+    margin: 10px 5px;
+  }
+
+  .nav-btn {
+  position: absolute;
+  top: 30px; 
+  right: 50px;
+  padding: 8px 12px;
+  font-size: 0.9em;
+  background: linear-gradient(to left, #010017, #23395d);
+  border-radius: 5px;
+  z-index: 200; 
+}
+
+  /* Skills container adjustments */
+  .skills-container {
+    flex-direction: column;
+    width: 90%; 
+    padding: 15px;
+    box-shadow: 0 2px 5px #23395d;
+  }
+
+  .skills-container > div {
+    width: 100%; 
+    margin-bottom: 20px; 
+  }
+
+  /* List items and icons */
+  ul li {
+    font-size: 1em; 
+    margin-bottom: 15px; 
+    padding: 8px;
+  }
+
+  ul li i {
+    margin-right: 10px; 
+  }
+
+  /* Logo adjustments */
+  .logo {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 10px;
+    padding-left: 10px;
+  }
+
+  .logo img {
+    width: 120px; 
+    height: auto;
+  }
+
+  h3 {
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+}
+
 
   </style>
 </head>
