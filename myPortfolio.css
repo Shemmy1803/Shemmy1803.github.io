@@ -122,9 +122,9 @@ body::before {
   align-items: center;
   position: relative;          
   margin-bottom: 20px;
-  margin-left: 100px; /* Adjust position */
-  margin-top: 5px; /* Adjust position */
-  box-shadow: -10px 10px 30px #B2A4D4; /* Box shadow */
+  margin-left: 50px; /* Adjust position */
+  margin-top: 1px; /* Adjust position */
+  box-shadow: -5px 5px 20px #B2A4D4; /* Box shadow */
   transform: rotate(-10deg); /* Apply rotation to the container */
 }
 
