@@ -5,18 +5,18 @@
   box-sizing: border-box;
 }
 
-body {
-  font-family: 'Ubuntu', sans-serif;
+.bg-gradient-custom {
   background: linear-gradient(to right, #010017, #030151);
-  color: #ccc;
+  color: #ccc; /* Ensure text color is readable */
+  min-height: 100vh; /* Full viewport height */
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
   flex-direction: column;
-  position: relative; 
-  overflow: hidden; 
+  position: relative;
+  overflow: hidden;
 }
+
 
 /* Transparent HI on the background with heartbeat animation */
 body::before {
@@ -45,8 +45,6 @@ body::before {
     transform: translate(-50%, -50%) scale(1); 
   }
 }
-
-
 
 /* Navbar */
 .navbar {
@@ -77,30 +75,11 @@ body::before {
   font-weight: bold;
 }
 
-/* Hire me button */
-.nav-btn {
-  background: linear-gradient(to left, #010017, #030151);
-  color: #ffffff;
-  padding: 10px 15px;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: bold;
-  box-shadow: 0px 0px 10px #917ae0;
-}
-
-.nav-btn:hover {
-  background-color: #203354;
-  color: #ffffff;
-}
-
-
-
 /* Main container */
 .container {
   display: flex;
   max-width: 1000px;
-  width: 100%;
-  padding: 20px 0;
+  width: 100%; 
   text-align: center;
   color: #fff;
   text-align: center; 
@@ -110,14 +89,13 @@ body::before {
 .logo {
   position: absolute;
   top: 20px;
-  left: 250px;
   font-size: 1em;
   font-weight: bold;
   color: #917ae0;
 }
 
 .logo img {
-  width: 120px;
+  width: 100px;
   height: auto;
   display: block;
   margin-bottom: 5px;
@@ -132,27 +110,34 @@ body::before {
   align-items: center;
 }
 
-/* Profile */
+/* Profile container */
 .profile-image {
-  width: 400px;
-  height: 550px;
-  border-radius: 0px;
+  width: 70%; /* Adjusts width relative to container */
+  height: 70%; /* Maintain aspect ratio */
+  max-height: 100%; /* Limit the max height */
+  border-radius: 20px; /* Rounded corners for a softer look */
   overflow: hidden;         
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;          
   margin-bottom: 20px;
-  margin-right: 20px;
-  margin-top: 150px; 
+  margin-left: 100px; /* Adjust position */
+  margin-top: 5px; /* Adjust position */
+  box-shadow: -10px 10px 30px #B2A4D4; /* Box shadow */
+  transform: rotate(-10deg); /* Apply rotation to the container */
 }
 
+/* Profile image */
 .profile-image img {
-  width: 70%;
-  height: 70%;
-  border-radius:20px;  
-  box-shadow: -10px 10px 10px #917ae0;
+  width: 100%; /* Make the image occupy 100% of the container's width */
+  height: 100%; /* Make the image occupy 100% of the container's height */
+  object-fit: cover; /* Ensures the image covers the area without distortion */
+  border-radius: 20px; /* Rounded corners for the image */
+  transform: rotate(0deg); /* Rotate the image back to make it match the container's rotation */
 }
+
+
 
 .slanted-image {
   border-radius:0%;       
@@ -164,8 +149,9 @@ body::before {
 .icons-container {
   display: flex;
   align-items: center;
-  gap: 15px;
-  margin-left: 20px;
+  gap: 15px; /* Adds space between icons */
+  margin-left: 0; /* Remove extra margin */
+  text-decoration: none;
 }
 
 .icons-container a {
@@ -185,12 +171,15 @@ body::before {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0 5px;
+  text-decoration: none;
 }
 
 .icons-container i:hover {
   color: #fff;
   background-color: #6049c2; 
   border-color: #fff; 
+  text-decoration: none;
 }
 
 
@@ -227,6 +216,7 @@ body::before {
   align-items: right;
   width: 100%;
 }
+
 
 /* Intro */
 @keyframes slideIn {
@@ -307,122 +297,81 @@ h2 {
   background-color: #a98bf0;
 }
 
-/* Mobile Friendly */
-@media screen and (max-width: 768px) {
-  html, body {
-    width: 100%;
-    height: auto;
-    overflow-x: hidden;
-    flex-direction: column;
-    align-items: center;
-  }
+/* Bootstrap */
+.text-accent {
+  color: #917ae0;
+}
 
-  body::before {
-    content: "HI";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 40vw;
-    font-weight: bold;
-    color: transparent;
-    -webkit-text-stroke: 1.5px rgba(255, 255, 255, 0.2); 
-    z-index: -1;
-    animation: heartbeat 3s infinite;
-  }
+/* Ensuring the text and elements are aligned to the left */
+.text-left {
+  text-align: left;
+  margin-left: 5px; /* Aligns the content to the left */
+}
 
-  .container {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 100px;
-    width: 100%;
-  }
+/* Button and icons aligned horizontally */
+.d-flex {
+  display: flex;
+  align-items: center;  /* Keeps button and icons aligned horizontally */
+  gap: 15px;  /* Space between button and icons */
+  margin-left: 0; /* Ensure no extra margin is added to the left */
+  padding-left: 0; /* Remove extra padding if applied */
+}
 
-  .sidebar {
-    width: 100%;
-    margin-right: 0;
-  }
-  .profile-image {
-    width: 400px;
-    height: 500px; 
-    overflow: hidden;         
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;          
-  }
+/* Contact button styling */
+.btn-contact {
+  margin-right: 15px; /* Adds spacing between the button and first icon */
+  margin-left: 0; /* Removes any extra left margin to keep it perfectly aligned */
+}
+
+/* Icons styling with color and hover effect */
+.text-light i {
+  color: #ccc;  /* Default icon color */
+  font-size: 1.2em;
+  transition: transform 0.3s ease, color 0.3s ease; /* Transition effect */
+}
+
+.text-light:hover i {
+  transform: scale(1.1); /* Slightly enlarges the icon on hover */
+  color: #917ae0; /* Icon color on hover */
+}
+
+.navbar-collapse {
+  justify-content: flex-start; /* Aligns content to the left */
+}
+
+.navbar-nav {
+  margin-left: 20px; /* Adjusts the space from the left */
+}
+
+.navbar-toggler {
+  margin-left: 10px; /* Optional: Moves the toggler slightly to the left */
+}
+
+/* Optionally, add some left padding for more precise control */
+h1, h2, .subtitle {
+  padding-left: 0px; /* Add left padding to headings and subtitle */
+  margin-top: -3px;
   
-  .profile-image img {
-    width: 60%;
-    height: 60%;
-    border-radius:10px;  
-    box-shadow: -10px 10px 10px #917ae0;
-  }
-  
-  .logo img {
-    width: 150px;
-    height: auto;
-    display: block;
-  }
+}
 
-  .slanted-image {      
-    object-fit: cover;        
-    transform: rotate(-5deg); 
-  }
+/* Custom Hire Me button */
+.btn-hireme {
+  background: linear-gradient(to left, #010017, #030151);
+  color: #fff; /* Set text color */
+  padding: 10px 20px; /* Increase padding to make the button bigger */
+  font-size: 1.2em; /* Increase font size */
+  font-weight: bold; /* Make text bold */
+  border-radius: 5px; /* Rounded corners */
+  text-decoration: none; /* Remove underline */
+  width: 100px; /* Set width of the button */
+  text-align: center; /* Center the text */
+  display: inline-block; /* Ensure it's treated as a block element */
+  transition: background-color 0.3s ease;
+  box-shadow: 0px 0px 10px rgba(145, 122, 224, 0.7); 
+}
 
-  .icons-container {
-    justify-content: center;
-    margin-top: 20px;
-  }
-
-  .navbar {
-    display: flex;
-    flex-wrap: wrap; 
-    justify-content: center; 
-    padding: 20px 0;
-    gap: 15px;
-  }
-
-  .navbar a {
-    margin: 5px;
-    font-size: 1em;
-    padding: 5px 10px; 
-  }
-
-  .nav-btn {
-    background: linear-gradient(to left, #010017, #030151);
-    color: #ffffff;
-    padding: 10px 15px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-size: 1em; 
-    box-shadow: 0px 0px 10px #917ae0;
-  }
-
-  .content {
-    width: 100%;
-    padding: 0 20px;
-  }
-
-  .btn {
-    width: auto; 
-    padding: 10px 20px; 
-  }
-
-  h1, h2, .subtitle {
-    padding-left: 0;
-    text-align: center;
-  }
-
-  .about {
-    padding: 0 20px;
-    text-align: center;
-  }
-
-  .about h3, .about p {
-    padding-left: 0;
-  }
+.btn-hireme:hover {
+  background-color: #a98bf0; /* Hover color */
 }
 
 
