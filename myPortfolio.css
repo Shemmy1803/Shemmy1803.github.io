@@ -299,7 +299,17 @@ h2 {
 
 @media (max-width: 768px) {
   body::before {
-    display: none; 
+    display: none; /* Hide the "HI" text on screens smaller than 768px */
+  }
+  body {
+    overflow-x: hidden; /* Ensures no horizontal scrolling */
+  }
+}
+
+/* Optional: Make sure other elements like the navbar also don't cause overflow */
+@media (max-width: 768px) {
+  .navbar {
+    overflow-x: hidden; /* Prevent horizontal scrolling on navbar */
   }
 }
 
