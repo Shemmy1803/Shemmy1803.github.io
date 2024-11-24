@@ -16,18 +16,8 @@
       padding: 0;
     }
 
-    .navbar {
-  width: 100%;
-  padding: 40px;
-  text-align: right;
-  font-weight: bold;
-  padding-right: 10px; 
-  margin-left: -200px; 
-  margin-top: 20px; 
-}
 
-
-    .navbar a {
+  .navbar a {
     color: #B2A4D4;
     text-decoration: none;
     font-size: .9em;
@@ -49,23 +39,6 @@
   font-weight: bold;
 }
 
-.navbar-nav {
-  display: flex; /* Make the items align horizontally */
-  justify-content: flex-end; /* Space them evenly */
-  align-items: center; /* Vertically align items */
-  gap: 10px; /* Add spacing between the items */
-  list-style: none; /* Remove bullets */
-  padding: 0; /* Remove default padding */
-  margin: 0; /* Remove default margin */
-}
-
-.nav-item .nav-link,
-.nav-btn {
-  font-size: .85rem; 
-  font-family: 'Ubuntu', sans-serif;
-}
-
-
 .nav-btn {
   background: linear-gradient(to left, #010017, #23395d);
   color: #ffffff;
@@ -84,23 +57,20 @@
     
 /* Logo */
 .logo {
-  position: absolute;
-  top: 20px;
-  left: 250px;
-  font-size: 1em;
-  font-weight: bold;
-  color: #917ae0;
-}
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 10px;
+    padding-left: 10px;
+  }
 
-.logo img {
-  width: 120px;
-  height: auto;
-  display: block;
-  margin-bottom: 5px;
-}
+  .logo img {
+    width: 120px; 
+    height: auto;
+  }
 
     .contact-form {
-      margin: 50px auto;
+      margin: -5px auto;
       width: 80%;
       max-width: 600px;
       background-color: #000;
@@ -113,6 +83,7 @@
     .contact-form h1 {
       color: #917ae0;
       margin-bottom: 20px;
+      font-weight: bold;
     }
 
     .contact-form label {
@@ -147,6 +118,41 @@
       background-color: #917ae0;
     }
 
+    .navbar-nav {
+  display: flex; 
+  justify-content: flex-end; 
+  align-items: center; 
+  gap: 10px;
+  list-style: none; 
+  padding: 0; 
+  margin: 0; 
+  font-family: 'Ubuntu', sans-serif;
+}
+
+
+  /* Navbar adjustments */
+ .navbar {
+    text-align: center;
+    padding: 20px 10px;
+    margin-left: 0;
+    font-size: .9em;
+  }
+ /* 
+  .navbar a {
+    display: inline-block;
+    margin: 10px 5px;
+  }
+
+  .nav-btn {
+  position: absolute;
+  top: 30px; 
+  right: 50px;
+  padding: 8px 12px;
+  font-size: 0.9em;
+  background: linear-gradient(to left, #010017, #23395d);
+  border-radius: 5px;
+  z-index: 200; 
+} */
   </style>
   <script>
     
@@ -170,6 +176,7 @@
     }
   </script>
 </head>
+
 <body class="bg-gradient-custom" style="font-family: 'Ubuntu', sans-serif;">
   <nav class="navbar navbar-expand-lg navbar-dark">
     <div class="container-fluid">
@@ -207,9 +214,9 @@
       </div>
     </div>
   </nav>
-  
+
   <div class="contact-form">
-    <h1>Contact Me</h1>
+    <h1>CONTACT ME</h1>
     <form onsubmit="sendEmail(event)">
       <label for="name">Full Name:</label>
       <input type="text" id="name" name="name" placeholder="Enter your name" required>
