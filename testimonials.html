@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Testimonials</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> 
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <style>
+    body {
+      font-family: 'Ubuntu', sans-serif;
+      background-color: #020123;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar a {
+      color: #B2A4D4;
+      text-decoration: none;
+      font-size: 1em;
+      font-weight: bold;
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+
+    .navbar a:hover {
+      color: #FFFFFF;
+      text-decoration: none;
+    }
+
+    .nav a {
+  color: #B2A4D4;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.nav-btn {
+  background: linear-gradient(to left, #010017, #030151);
+  color: #ffffff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0px 0px 10px #917ae0;
+}
+
+.nav-btn:hover {
+  background-color: #203354;
+  color: #ffffff;
+}
+
+    /* Logo */
+    .logo {
+      position: absolute;
+      top: 20px;
+      left: 250px;
+      font-size: 1em;
+      font-weight: bold;
+      color: #917ae0;
+    }
+
+    .logo img {
+      width: 120px;
+      height: auto;
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    h3 {
+      color: #917ae0;
+      font-size: 2em;
+      margin-bottom: 20px;
+      font-weight: bold;
+      padding-bottom: 30px;
+      padding-top: 70px;
+      margin-right: 900px;
+    }
+
+.navbar-nav {
+  display: flex; 
+  justify-content: flex-end; 
+  align-items: center; 
+  gap: 10px;
+  list-style: none; 
+  padding: 0; 
+  margin: 0; 
+  font-family: 'Ubuntu', sans-serif;
+} 
+
+  /* Navbar adjustments */
+ .navbar {
+    text-align: center;
+    padding: 30px 10px;
+    margin-left: 0;
+    font-size: .9em;
+  }
+
+  @media screen and (max-width: 768px) {
+.testimonial-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  margin-top: 20px;
+}
+
+.testimonial-image {
+  max-width: 90%; 
+  border: 3px solid #917ae0;
+  border-radius: 0px;
+  margin-bottom: 10px;
+}
+
+  }
+
+/* Carousel container
+.testimonial-carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: auto;
+} */
+
+/* Individual testimonials */
+#testimonialCarousel {
+    position: relative;
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .carousel-inner {
+    width: 30%; 
+    height: 500px;
+  }
+
+  .carousel-item {
+    text-align: center;
+  }
+
+  .testimonial-container {
+    background-color:#081727;
+    border-radius: 10px; 
+    padding: 20px;
+  }
+  .testimonial-text {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: white;
+  }
+
+  .testimonial-author {
+    font-size: 1em;
+    font-style: italic;
+    color: #B2A4D4;
+  }
+
+  .carousel-item img {
+    margin-bottom: 10px;
+    height: 100%;
+    width: auto;
+  }
+
+  #testimonialCarousel .carousel-indicators {
+  position: absolute;
+  bottom: 200px;
+}
+
+
+  </style>
+</head>
+
+<body class="bg-gradient-custom" style="font-family: 'Ubuntu', sans-serif;">
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid">
+      <a class="logo" href="index.html">
+        <img src="./Portfolio/zorex.png" alt="Logo" style="width: 100px; height: auto;">
+      </a>
+      <button class="navbar-toggler" type="button" style="border: none; " data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse " id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.html">ABOUT ME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="skills.html">SKILLS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="courses.html">COURSES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="projects.html">PROJECTS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="experience.html">EXPERIENCE</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  active" href="testimonials.html">TESTIMONIALS</a>
+          </li>
+          <li class="nav-item">
+            <a href="hireme.html" class="nav-btn btn-hireme">Hire me</a>
+          </li>    
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- Carousel container -->
+<div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 5"></button>
+      </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="testimonial-container">
+          <div class="d-flex justify-content-center">
+            <img src="./Portfolio/prof.jpeg" class="d-block rounded-circle" alt="Client 1" style="width: 100px; height: 100px; object-fit: cover;">
+          </div>
+          <div class="testimonial-caption">
+            <p class="testimonial-text">"Zelda's attention to detail and creativity were exceptional. She really brought my ideas to life!"</p>
+            <p class="testimonial-author">- John Doe, CEO</p>
+          </div>
+        </div>
+      </div>
+  
+      <div class="carousel-item">
+        <div class="testimonial-container">
+          <div class="d-flex justify-content-center">
+            <img src="./Portfolio/zt.png" class="d-block rounded-circle" alt="Client 2" style="width: 100px; height: 100px; object-fit: cover;">
+          </div>
+          <div class="testimonial-caption">
+            <p class="testimonial-text">"Working with Zelda was an amazing experience. Highly recommend her for any project!"</p>
+            <p class="testimonial-author">- Jane Smith, Art Director</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="testimonial-container">
+          <div class="d-flex justify-content-center">
+            <img src="./Portfolio/zt.png" class="d-block rounded-circle" alt="Client 2" style="width: 100px; height: 100px; object-fit: cover;">
+          </div>
+          <div class="testimonial-caption">
+            <p class="testimonial-text">"Working with Zelda was an amazing experience. Highly recommend her for any project!"</p>
+            <p class="testimonial-author">- Jane Smith, Art Director</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="testimonial-container">
+          <div class="d-flex justify-content-center">
+            <img src="./Portfolio/zt.png" class="d-block rounded-circle" alt="Client 2" style="width: 100px; height: 100px; object-fit: cover;">
+          </div>
+          <div class="testimonial-caption">
+            <p class="testimonial-text">"Working with Zelda was an amazing experience. Highly recommend her for any project!"</p>
+            <p class="testimonial-author">- Jane Smith, Art Director</p>
+          </div>
+        </div>
+      </div>
+  
+      <div class="carousel-item">
+        <div class="testimonial-container">
+          <div class="d-flex justify-content-center">
+            <img src="./Portfolio/profile.jpg" class="d-block rounded-circle" alt="Client 3" style="width: 100px; height: 100px; object-fit: cover;">
+          </div>
+          <div class="testimonial-caption">
+            <p class="testimonial-text">"Her professionalism and creativity transformed my business. Couldn’t be happier with the results!"</p>
+            <p class="testimonial-author">- Sam Johnson, Entrepreneur</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

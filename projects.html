@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hire Me</title>
+  <title>Projects</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> 
   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
@@ -16,17 +16,6 @@
       margin: 0;
       padding: 0;
     }
-
-    /* Navbar */
-    /* .navbar {
-      width: 100%;
-      padding: 40px;
-      text-align: right;
-      font-weight: bold;
-      padding-right: 10px;
-      margin-left: -200px;
-      margin-top: 20px;
-    } */
 
     .navbar a {
       color: #B2A4D4;
@@ -90,44 +79,31 @@
       height: 100vh;
     }
 
-    .resume-container {
+    .project-container {
       display: flex;
       align-items: center; 
-      gap: 20px; 
+      gap: 80px; 
     }
 
     h3 {
       color: #917ae0;
-      font-size: 1.2em;
+      font-size: 2em;
       margin-bottom: 20px;
       font-weight: bold;
-      padding-top: 100px;
+      padding-bottom: 30px;
+      padding-top: 70px;
+      margin-right: 900px;
     }
 
-    .resume-image {
+    .project-image {
       max-width: 500px; 
       border: 3px solid #917ae0;
       border-radius: 0px;
     }
+ 
 
-  /* Animation to download button */
-.download-btn {
-  background-color: #23395d;
-  color: #fff;
-  padding: 10px 20px;
-  text-decoration: none;
-  font-size: 0.9em;
-  border-radius: 5px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-  margin-top: 10px;
-  text-align: center;
-  transform: translateY(0); 
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease; 
-}
-
-.download-btn:hover {
+    .project-image:hover {
   transform: translateY(-5px);
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
 }
 
 .navbar-nav {
@@ -149,32 +125,23 @@
     font-size: .9em;
   }
 
+  
+
   @media screen and (max-width: 768px) {
-.resume-container {
+.project-container {
   display: flex;
   flex-direction: column;
   align-items: center; 
   margin-top: 20px;
 }
 
-.resume-image {
+.project-image {
   max-width: 90%; 
   border: 3px solid #917ae0;
   border-radius: 0px;
   margin-bottom: 10px;
 }
 
-.download-btn {
-  background-color: #23395d;
-  color: #fff;
-  padding: 10px 20px;
-  text-decoration: none;
-  font-size: 0.9em;
-  border-radius: 5px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-  margin-top: 10px; 
-  text-align: center;
-}
   }
 
   </style>
@@ -202,7 +169,7 @@
             <a class="nav-link" href="courses.html">COURSES</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="projects.html">PROJECTS</a>
+            <a class="nav-link active" href="projects.html">PROJECTS</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="experience.html">EXPERIENCE</a>
@@ -218,24 +185,45 @@
     </div>
   </nav>
 
-
-  <!-- Hire Me Content -->
   <div class="container">
     <div>
-      <h3> MY RESUME</h3>
+      <h3>WEBSITE PROJECTS</h3>
+      <div class="project-container">
+        <div>
+        <a href ="https://semilogoodunowo.wixsite.com/zkrochet"><img src="./Portfolio/za.jpg" alt="za" class="project-image" style="width: 400px; height: auto;"></a> 
+          <br><br>
+          <a href ="https://semilogoodunowo.wixsite.com/zkrochet" style="text-decoration: none;"><p class="project-title" style="font-size: 1.2em; font-weight: bold; color: #B2A4D4;  text-align: center;">Zelda Academy</p></a>
+          <a href ="desc.html" style="text-decoration:double;"><p class="project-title" style="font-size: 1.2em; color: white; align-items: center;  text-align: center; border: 3px solid #B2A4D4; ">Project Description</p></a>
+        </div>
+        
+        <div>
+            <a href ="https://semilogoodunowo.wixsite.com/zkrochet"><img src="./Portfolio/zk.jpg" alt="zk" class="project-image" style="width: 300px; height: auto;"></a> 
+              <br><br>
+              <a href ="https://semilogoodunowo.wixsite.com/zkrochet" style="text-decoration: none;"><p class="project-title" style="font-size: 1.2em; font-weight: bold; color: #B2A4D4;  text-align: center;">ZKrochet</p></a>
+              <a href ="desc.html#zkrochet" style="text-decoration:double;"><p class="project-title" style="font-size: 1.2em; color: white; align-items: center;  text-align: center; border: 3px solid #B2A4D4; ">Project Description</p></a>
+            </div>
 
-      <!-- Resume Container with Image and Button -->
-      <div class="resume-container">
-        <!-- Resume Image -->
-        <img src="./Portfolio/resume.jpg" alt="My Resume" class="resume-image">
-
-        <!-- Download Button -->
-        <a href="./Portfolio/resume.pdf" download class="download-btn">
-          Download CV
-        </a>
+        <div>
+        <a href ="https://shemmy1803-github-io.vercel.app/index.html"><img src="./Portfolio/folio.jpg" alt="folio" class="project-image"  style="width: 400px; height: auto;"></a> 
+          <br><br>
+          <a href ="https://shemmy1803-github-io.vercel.app/index.html" style="text-decoration: none;"><p class="project-title" style="font-size: 1.2em; font-weight: bold; color: #B2A4D4; text-align: center;">Website Porfolio</p></a>
+          <a href ="desc.html#folio" style="text-decoration:double;"><p class="project-title" style="font-size: 1.2em; color: white; align-items: center;  text-align: center; border: 3px solid #B2A4D4; ">Project Description</p></a>
+        </div>
       </div>
     </div>
   </div>
+
+
+  <div class="container">
+    <div>
+      <h3>PERSONAL PROJECTS</h3>
+      <div class="project-container">
+        <div>
+        <a href ="art.html"><img src="./Portfolio/art.jpg" alt="artwork" class="project-image" style="width: 300px; height: auto;"></a>
+          <br><br>
+          <a href ="art.html" style="text-decoration: none;"><p class="project-title" style="font-size: 1.2em; font-weight: bold; color: #B2A4D4;  text-align: center;">Art Work</p></a>
+        </div>
+      </div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
 </body>

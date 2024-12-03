@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Experience</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> 
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <style>
+    
+    body {
+      font-family: 'Ubuntu', sans-serif;
+      background-color: #020123;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+    }
+
+
+    .navbar a {
+    color: #B2A4D4;
+    text-decoration: none;
+    font-size: .9em;
+    font-weight: bold;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.navbar a:hover {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.nav a {
+  color: #B2A4D4;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.nav-btn {
+  background: linear-gradient(to left, #010017, #030151);
+  color: #ffffff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0px 0px 10px #917ae0;
+}
+
+.nav-btn:hover {
+  background-color: #203354;
+  color: #ffffff;
+}
+ 
+    
+/* Logo */
+.logo {
+  position: absolute;
+  top: 20px;
+  left: 250px;
+  font-size: 1em;
+  font-weight: bold;
+  color: #917ae0;
+}
+
+.logo img {
+  width: 120px;
+  height: auto;
+  display: block;
+  margin-bottom: 5px;
+  padding-top: 30px;
+}
+h1 {
+      color: #917ae0;
+      font-size: 1.5em;
+      padding-bottom: 20px;
+      font-weight: bold;
+      padding-top: 8px;
+    }
+
+    .job-container {
+      margin-top: 30px; 
+      max-width: 60%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .job-title {
+      font-weight: bold;
+      font-size: 1.5rem;
+      color: #2f65bb;
+      /* #23395d */
+    }
+
+    .job-title:hover {
+      color:#23395d; 
+    }
+
+    .job-title a {
+    color: inherit;
+    text-decoration: none; 
+    }
+
+    .job-description {
+      margin-top: 10px;
+      line-height: 1.6;
+    }
+
+    .company-logo {
+      width: 17%; 
+      height: auto;
+      margin-right: 15px;
+    }
+
+    
+  .navbar-nav {
+  display: flex; 
+  justify-content: flex-end; 
+  align-items: center; 
+  gap: 10px;
+  list-style: none; 
+  padding: 30px; 
+  margin: 0; 
+  font-family: 'Ubuntu', sans-serif;
+} 
+
+  /* Navbar adjustments */
+ .navbar {
+    text-align: center;
+    padding: 30px 10px;
+    margin-left: 0;
+    font-size: 1em;
+  }
+
+  /* See more button */
+  .more-btn {
+  background-color: #23395d;
+  color: #fff;
+  padding: 5px 10px;
+  text-decoration: none;
+  font-size: 0.9em;
+  border-radius: 5px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  margin-top: 10px;
+  margin-left: 500px;
+  transform: translateY(0); 
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+  float: right; 
+}
+
+.more-btn:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}
+
+    /* Responsive styles for smaller screens */
+@media screen and (max-width: 768px) {
+  .job-container {
+    flex-direction: column; 
+    align-items: center;
+    gap: 30px;
+  }
+
+  .job-container > div {
+    width: 90%;
+    max-width: 600px; 
+    margin-bottom: 20px; 
+  }
+
+  ul li {
+    font-size: 1.1em; 
+    padding: 8px; 
+  }
+}
+  </style>
+</head>
+<body class="bg-gradient-custom" style="font-family: 'Ubuntu', sans-serif;">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container-fluid">
+        <a class="logo" href="index.html">
+          <img src="./Portfolio/zorex.png" alt="Logo" style="width: 100px; height: auto;">
+        </a>
+        <button class="navbar-toggler" type="button" style="border: none; " data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">ABOUT ME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="skills.html">SKILLS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="courses.html">COURSES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="projects.html">PROJECTS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="experience.html">EXPERIENCE</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="testimonials.html">TESTIMONIALS</a>
+            </li>
+            <li class="nav-item">
+              <a href="hireme.html" class="nav-btn btn-hireme">Hire me</a>
+            </li>    
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  <div class="container">
+    <h1 class="text-center mt-4 fw-bold">JOB EXPERIENCE</h1>
+
+    <div class="job-container d-flex align-items-start">
+      <img src="./Portfolio/cutco.jpg" class="rounded float-start company-logo" alt="company logo">
+      <div>
+        <p class="job-title"> <a href="more.html">Cutco Cutlery</a></p>
+        <p class="job-description">
+          <p>
+            <span style="font-weight: bold;">May 2024 - July 2024</span> <br>
+            <span style="font-weight: bold; color:#B2A4D4;">SALES REPRESENTATIVE</span> <br>
+             Calgary, AB.
+          </p>          
+        </p>
+      </div>
+    </div>
+
+    <h1 class="text-center mt-4 fw-bold">VOLUNTEER EXPERIENCE</h1>
+    <div class="job-container d-flex align-items-start">
+      <img src="./Portfolio/ymca.png" class="rounded float-start company-logo" alt="company logo">
+      <div>
+        <p class="job-title"> <a href="more.html#ymca">YMCA Calgary</a></p>
+        <p class="job-description">
+          <p>
+            <span style="font-weight: bold;">March 2021 - June 2021</span> <br>
+            <span style="font-weight: bold; color:#B2A4D4;">EARLY CHILDHOOD EDUCATOR</span> <br>
+             Calgary, AB.
+          </p>             
+        </p>
+      </div>
+    </div>
+
+    <div class="job-container d-flex align-items-start">
+      <img src="./Portfolio/gsv.jpg" class="rounded float-start company-logo" alt="company logo">
+      <div>
+        <p class="job-title"> <a href="more.html#gsv">Grand Seton Village</a></p>
+        <p class="job-description">
+          <p>
+            <span style="font-weight: bold;">July 2024 - August 2024</span> <br>
+            <span style="font-weight: bold; color:#B2A4D4;">TECH-SUPPORT SPECIALIST</span> <br>
+             Calgary, AB.
+          </p>   
+          </p>       
+        </p>
+      </div>
+    </div>
+
+    <h1 class="text-center mt-4 fw-bold">EXTRACURRICULAR EXPERIENCE</h1>
+    <div class="job-container d-flex align-items-start">
+      <img src="./Portfolio/hobs.jpg" class="rounded float-start company-logo" alt="company logo">
+      <div>
+        <p class="job-title"> <a href="more.html#hobs">HOBS</a></p>
+        <p class="job-description">
+          <p>
+            <span style="font-weight: bold;">July 2014 - July 2021</span> <br>
+            <span style="font-weight: bold; color:#B2A4D4;">BAKER</span> <br>
+            Port Harcourt, Nigeria.
+          </p>             
+        </p>
+      </div>
+    </div>
+
+    <div class="job-container d-flex align-items-start">
+      <img src="./Portfolio/weave.jpg" class="rounded float-start company-logo" alt="company logo">
+      <div>
+        <p class="job-title"> <a href="more.html#zkay">ZKrochet</a></p>
+        <p class="job-description">
+          <p>
+            <span style="font-weight: bold;">December 2021 - Present</span> <br>
+            <span style="font-weight: bold; color:#B2A4D4;">CROCHET ARTIST</span> <br>
+             Calgary, AB.
+          </p>   
+            <a href="more.html#extra" download class="more-btn">
+              See more...
+            </a>
+          </p>       
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

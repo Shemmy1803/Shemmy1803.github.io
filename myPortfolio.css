@@ -112,37 +112,38 @@ body::before {
 
 /* Profile container */
 .profile-image {
-  width: 70%; /* Adjusts width relative to container */
-  height: 70%; /* Maintain aspect ratio */
-  max-height: 100%; /* Limit the max height */
-  border-radius: 20px; /* Rounded corners for a softer look */
+  width: 70%;
+  height: 70%; 
+  max-height: 100%;
+  border-radius: 20px; 
   overflow: hidden;         
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;          
   margin-bottom: 20px;
-  margin-left: 50px; /* Adjust position */
-  margin-top: 1px; /* Adjust position */
-  box-shadow: -5px 5px 20px #B2A4D4; /* Box shadow */
-  transform: rotate(-10deg); /* Apply rotation to the container */
+  margin-left: 50px;
+  margin-top: 1px;
+  box-shadow: -5px 5px 20px #B2A4D4;
+  transform: rotate(-10deg); 
 }
 
 /* Profile image */
 .profile-image img {
-  width: 100%; /* Make the image occupy 100% of the container's width */
-  height: 100%; /* Make the image occupy 100% of the container's height */
-  object-fit: cover; /* Ensures the image covers the area without distortion */
-  border-radius: 20px; /* Rounded corners for the image */
-  transform: rotate(0deg); /* Rotate the image back to make it match the container's rotation */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px; 
+  transform: rotate(0deg);
 }
 
-
+.profile-image:hover {
+  transform: translateY(-5px);
+}
 
 .slanted-image {
   border-radius:0%;       
   object-fit: cover;        
-  transform: rotate(-10deg); 
 }
 
 /* Icons */

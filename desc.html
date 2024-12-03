@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Description</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> 
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <style>
+    body {
+      font-family: 'Ubuntu', sans-serif;
+      background-color: #020123;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* .navbar {
+  width: 100%;
+  padding: 40px;
+  text-align: right;
+  font-weight: bold;
+  padding-right: 10px; 
+  margin-left: -200px; 
+  margin-top: 20px; 
+} */
+
+
+    .navbar a {
+    color: #B2A4D4;
+    text-decoration: none;
+    font-size: .9em;
+    font-weight: bold;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.navbar a:hover {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.nav a {
+  color: #B2A4D4;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.nav-btn {
+  background: linear-gradient(to left, #010017, #030151);
+  color: #ffffff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0px 0px 10px #917ae0;
+}
+
+.nav-btn:hover {
+  background-color: #203354;
+  color: #ffffff;
+}
+ 
+    
+/* Logo */
+.logo {
+  position: absolute;
+  top: 20px;
+  left: 250px;
+  font-size: 1em;
+  font-weight: bold;
+  color: #917ae0;
+}
+
+.logo img {
+  width: 120px;
+  height: auto;
+  display: block;
+  margin-bottom: 5px;
+}
+    h3 {
+      color: #917ae0;
+      font-size: 1.5em;
+      margin-bottom: 15px;
+      font-weight: bold;
+    }
+
+    .more-container {
+      width: 60%; 
+      margin: 0 auto;
+      padding: 30px;
+      background-color: #000000;
+      box-shadow: 0 4px 10px #23395d;
+      border-radius: 10px;
+      margin-top: 2px;
+      transition: transform 0.3s ease;
+      margin-bottom: 20px;
+    }
+
+    
+.extra-images {
+  display: flex;
+  justify-content: left;
+  gap: 20px;
+  margin-top: 15px;
+}
+
+.extra-image {
+  width: 150px;
+  height: 200px;
+  border-radius: 5px; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+
+    /* Styling for the list items without affecting others */
+.icon {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.icon li {
+  font-size: 1.2em;
+  color: #B2A4D4;
+  margin-bottom: 30px;
+  background-color: #010123;
+  padding: 10px;
+  transition: transform 0.3s ease;
+  text-align: right;
+}
+
+.icon li:hover {
+  transform: translateX(5px);
+}
+
+
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    ul li { 
+      font-size: 1.2em;
+      margin-bottom: 30px;
+    }
+
+    .more-container h3 {
+      text-align: left;
+      margin-bottom: 20px;
+
+    }
+
+   
+    ul li i {
+      margin-right: 10px;
+    
+    }
+
+
+    .navbar-nav {
+  display: flex; 
+  justify-content: flex-end; 
+  align-items: center; 
+  gap: 5px;
+  list-style: none; 
+  padding: 0; 
+  margin: 0; 
+  font-family: 'Ubuntu', sans-serif;
+} 
+
+  /* Navbar adjustments */
+ .navbar {
+    text-align: center;
+    padding: 30px 10px;
+    margin-left: 0;
+    font-size: .8em;
+  }
+
+  /* Responsive styles for smaller screens */
+@media screen and (max-width: 768px) {
+  .more-container {
+    flex-direction: column; 
+    align-items: center;
+    gap: 30px;
+  }
+
+  .more-container > div {
+    width: 90%;
+    max-width: 600px; 
+    margin-bottom: 20px; 
+  }
+
+  ul li {
+    font-size: 1.1em; 
+  }
+}
+
+/* Back-to-top Button */
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  color: white;
+  text-align: center;
+  line-height: 50px;
+  background-color: #23395d;
+  border-radius: 50%;
+  font-size: 24px;
+  text-decoration: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.back-to-top:hover {
+  background-color: #917ae0;
+  transform: scale(1.1);
+  color: #010017;
+}
+
+.back-to-top.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.back-to-top.show {
+  opacity: 1;
+  visibility: visible;
+}
+  </style>
+</head>
+
+<body class="bg-gradient-custom" style="font-family: 'Ubuntu', sans-serif;">
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid">
+      <a class="logo" href="index.html">
+        <img src="./Portfolio/zorex.png" alt="Logo" style="width: 100px; height: auto;">
+      </a>
+      <button class="navbar-toggler" type="button" style="border: none; " data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse " id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.html">ABOUT ME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="skills.html">SKILLS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="courses.html">COURSES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  active" href="projects.html">PROJECTS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="experience.html">EXPERIENCE</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="testimonials.html">TESTIMONIALS</a>
+          </li>
+          <li class="nav-item">
+            <a href="hireme.html" class="nav-btn btn-hireme">Hire me</a>
+          </li>    
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="more-container">
+    <h3>ZELDA ACADEMY</h3>
+    <p>Toward the end of my second year of college, I applied for this position in early April and was successfully offered the role of a Sales Representative following an online interview. Although I was based in Lethbridge at the time, the position was located in Calgary. I received my official offer on April 8th and began working on May 1st, shortly after returning to Calgary for the summer.</p>
+  </div>
+  
+
+  <div class="more-container" id="zkrochet">
+    <h3>ZKROCHET</h3>
+    <p>In order to earn an additional 5 credits in the Early Childhood Education course I completed in high school, I was required to obtain both a CPR certification and a Level 1 ECE certificate. To meet the requirements for the ECE certificate, I completed 72 hours of volunteer work, where I gained hands-on experience working at a daycare and in childminding.</p>
+</div>
+
+<div class="more-container" id="folio">
+    <h3>WEBSITE PORTFOLIO</h3>
+    <p>After leaving my position at Cutco Cutlery due to it being outside my comfort zone, I applied for a role at GSV. However, since they were seeking a longer-term commitment and I was preparing to return to school at Lethbridge in two months, I was instead hired as a volunteer in the roles of Tech Support Specialist and Event Decorator.</p>   
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+
+<a href="#" class="back-to-top" title="Back to Top">
+    &#8679;
+  </a>
+  
+  <script>
+    const backToTopButton = document.querySelector('.back-to-top');
+  
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 200) { // Show when scrolled 200px down
+        backToTopButton.classList.add('show');
+      } else {
+        backToTopButton.classList.remove('show');
+      }
+    });
+  
+    backToTopButton.addEventListener('click', (e) => {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: 'smooth' }); // Smooth scroll to top
+    });
+  </script>
+  
+</body>
+</html>
+
