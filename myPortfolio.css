@@ -7,8 +7,8 @@
 
 .bg-gradient-custom {
   background: linear-gradient(to right, #010017, #030151);
-  color: #ccc; /* Ensure text color is readable */
-  min-height: 100vh; /* Full viewport height */
+  color: #ccc;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
