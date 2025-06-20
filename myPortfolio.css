@@ -1,11 +1,7 @@
-/* Basic reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+@import url('https://fonts.googleapis.com/css?family=tahoma');
 
-.bg-gradient-custom {
+/* Basic reset */
+body{  
   background: linear-gradient(to right, #010017, #030151);
   color: #ccc;
   min-height: 100vh;
@@ -14,37 +10,44 @@
   align-items: center;
   flex-direction: column;
   position: relative;
-  overflow: hidden;
+}
+
+i {
+	margin-right: 10px;
 }
 
 
-/* Transparent HI on the background with heartbeat animation */
-body::before {
-  content: "HI";
-  position: absolute;
-  top: 45%;
-  left: 75%;
-  transform: translate(-50%, -50%);
-  font-size: 30vw; 
-  font-weight: bold;
-  color: transparent; 
-  -webkit-text-stroke: 1.5px rgba(255, 255, 255, 0.2); 
-  z-index: -1; 
-  animation: heartbeat 3s infinite; 
+.navbar .nav-link {
+  color:#B2A4D4;
+
+}
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  color: white !important;
+  text-decoration: none;
+  text-underline-offset: 6px;
 }
 
-/* Heartbeat animation */
-@keyframes heartbeat {
-  0%, 100% {
-    transform: translate(-50%, -50%) scale(1); 
-  }
-  30% {
-    transform: translate(-50%, -50%) scale(1.2); 
-  }
-  50% {
-    transform: translate(-50%, -50%) scale(1); 
-  }
+.c-item {
+    height:400px;
 }
+
+.c-img {
+    height: 100%;
+    object-fit: cover;
+    filter:brightness(0.4); 
+}
+
+.c-caption {
+    text-align: left;
+    margin-bottom: 5%;
+}
+
+.c-caption h1 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
 
 /* Navbar */
 .navbar {
@@ -52,6 +55,7 @@ body::before {
   padding: 40px;
   text-align: right;
   font-weight: bold;
+  background: linear-gradient(to right, #010017, #030151);
 }
 
   .navbar a {
@@ -74,6 +78,63 @@ body::before {
   font-size: 1em;
   font-weight: bold;
 }
+
+/* Hamburger */
+.navbar-toggler {
+  border: none;
+  outline: none;
+}
+
+.navbar-toggler-icon::before {
+  content: "\2630"; /* Unicode hamburger menu */
+  font-size: 1.5rem;
+  color: #B2A4D4; 
+}
+
+
+/* Transparent HI on the background with heartbeat animation */
+body::before {
+  content: "HI";
+  position: absolute;
+  top: 45%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+  font-size: 30vw; 
+  font-weight: bold;
+  color: transparent; 
+  -webkit-text-stroke: 1.5px rgba(255, 255, 255, 0.2); 
+  z-index: -1; 
+  animation: heartbeat 3s infinite; 
+}
+/* Heartbeat animation */
+@keyframes heartbeat {
+  0%, 100% {
+    transform: translate(-50%, -50%) scale(1); 
+  }
+  30% {
+    transform: translate(-50%, -50%) scale(1.2); 
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1); 
+  }
+}
+
+/* Profile image */
+.profile-image img {
+  object-fit: cover; 
+  transform: rotate(0deg);
+
+}
+
+.profile-image:hover {
+  transform: translateY(-5px);
+}
+
+.slanted-image {      
+  object-fit: cover;
+      
+}
+
 
 /* Main container */
 .container {
@@ -126,24 +187,6 @@ body::before {
   margin-top: 1px;
   box-shadow: -5px 5px 20px #B2A4D4;
   transform: rotate(-10deg); 
-}
-
-/* Profile image */
-.profile-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 20px; 
-  transform: rotate(0deg);
-}
-
-.profile-image:hover {
-  transform: translateY(-5px);
-}
-
-.slanted-image {
-  border-radius:0%;       
-  object-fit: cover;        
 }
 
 /* Icons */

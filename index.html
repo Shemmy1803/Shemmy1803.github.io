@@ -1,96 +1,75 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ZELTRIX - Personal Portfolio</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> 
-  <link href="https://fonts.googleapis.com/css2?family=Tahoma:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="icon" href="./Portfolio/zelicon.png" type="image/png">
-  <link rel="stylesheet" href="myPortfolio.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Tahoma:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="myPortfolio.css">   
+    <script src="script.js"></script>
+    <link rel="icon" type="image/png" href="./Portfolio/zelicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>ZELTRIX - Personal Portfolio</title>
 </head>
+<body>
 
-<body class="bg-gradient-custom" style="font-family: 'Tahoma', sans-serif;">
-  <nav class="navbar navbar-expand-lg navbar-dark">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="index.html">
-        <img src="./Portfolio/zorex.png" alt="Logo" style="width: 100px; height: auto;">
-      </a>
-      <button class="navbar-toggler" type="button" style="border: none; " data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      
-      <div class="collapse navbar-collapse " id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html">ABOUT ME</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="skills.html">SKILLS</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="courses.html">COURSES</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="projects.html">PROJECTS</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="experience.html">EXPERIENCE</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="testimonials.html">TESTIMONIALS</a>
-          </li>
-          <li class="nav-item">
-            <a href="hireme.html" class="btn btn-hireme">Hire me</a>
-          </li>    
-        </ul>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg sticky-top">
+      <div class="container">
+          <a href="index.html" class="navbar-brand"><img src="./Portfolio/zelicon.png" alt="logo" width="35" height="35"></a>
+
+          <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-label="Expand Navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>      
+          <div class="collapse navbar-collapse justify-content-center" id="navbar">
+                  <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">ABOUT ME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="skills.html">SKILLS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="courses.html">COURSES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="projects.html">PROJECTS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="experience.html">EXPERIENCE</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="testimonials.html">TESTIMONIALS</a>
+              </li>
+              <li class="nav-item">
+                <a href="hireme.html" class="btn btn-hireme">Hire me</a>
+              </li>    
+            </ul>
+          </div>
       </div>
-    </div>
   </nav>
 
-  <div class="container-fluid">
-    <div class="row vh-100">
-      <div class="col-md-4 d-flex flex-column align-items-center py-5 bg-transparent">
-        <div class="mb-4">
+<section class="services-01 justify-content-center mt-3 mb-3">
+  <div class="container d-flex justify-content-center p-3">
+    <div class="card mb-3 w-100" style="max-width: 1100px; background-color: transparent; border: none;">
+      <div class="row g-4 align-items-center"> 
+
+        <!-- Image column -->
+        <div class="col-md-6 text-center">
+          <img src="./Portfolio/wow.jpg" class="img-fluid slanted-image profile-image"
+            alt="Image" style="width: 320px; height: 480px; object-fit: cover; border-radius: 30px;">
         </div>
 
-        <div class="profile-image mb-4" style="margin-top: -50px;">
-          <a href="./Portfolio/wow.jpg">
-            <img src="./Portfolio/wow.jpg" alt="Description of image" class="img-fluid rounded shadow-lg slanted-image">
-        </a>
-    </div>              
-  </div>
-
-      <!-- <div class="col-md-8 py-5">
-        <nav class="navbar navbar-expand-md navbar-dark">
-          <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-              <ul class="navbar-nav">
-                <li class="nav-item"><a class="nav-link" href="">ABOUT ME</a></li>
-                <li class="nav-item"><a class="nav-link" href="skills.html">SKILLS</a></li>
-                <li class="nav-item"><a class="nav-link" href="projects.html">PROJECTS</a></li>
-                <li class="nav-item"><a class="nav-link" href="courses.html">COURSES</a></li>
-                <li class="nav-item"><a class="nav-link" href="testimonials.html">TESTIMONIALS</a></li>
-                <li class="nav-item">
-                  <a href="hireme.html" class="btn btn-hireme">Hire me</a>
-                </li>                
-              </ul>
-            </div>
-          </div>
-        </nav> -->
-
-        <div class="container py-4">
-          <div class="text-center">
-            <h1 class="fw-bold" style="font-size: 3rem; margin-bottom: 20px;">I'm a Web Designer</h1>
+  <!-- Text column (Replaced content) -->
+        <div class="col-md-6">
+          <div class="card-body text-start">
+            <h1 class="fw-bold" style="font-size: 2.5rem; margin-bottom: 20px;">I'm a Web Designer</h1>
             <h2 class="fw-bold" style="font-size: 2rem; margin-bottom: 10px;">OLUWATISEMILOGO<br>ODUNOWO</h2>
-            <h4 class="subtitle fw-normal" style="font-size: 1.5rem; margin-bottom: 20px;">I Design Beyond the Screen</h4>
+            <h4 class="subtitle fw-normal" style="font-size: 1rem; margin-bottom: 20px;">I Design Beyond the Screen</h4>
 
-            <div class="d-flex justify-content-start align-items-center gap-3 mt-3">
-              <a href="contact.html" class="btn btn-outline-light btn-contact">Contact me</a>
+              <div class="d-flex justify-content-start align-items-center gap-3 mt-3">
+              <a href="contact.html" class="btn btn-outline-light btn-contact" style="min-width: 150px;">Contact me</a>
+
             <div class="d-flex justify-content-center align-items-center gap-1 mt-30">
               <a href="mailto:semilogo.odunowo@gmail.com" class="icons-container"><i class="fas fa-envelope fa-lg"></i></a>
               <a href="https://www.linkedin.com/in/oluwatisemilogo-odunow-312221252" target="_blank" class="icons-container"><i class="fab fa-linkedin fa-lg"></i></a>
@@ -98,16 +77,24 @@
               <a href="https://github.com/Shemmy1803" target="_blank" class="icons-container"><i class="fab fa-github fa-lg"></i></a>
             </div>
             </div>
-            
-            <br><br>
 
-            <h2 class="fw-bold" style="font-size: 1.5rem; margin-bottom: 10px; color: #B2A4D4;">Who Am I?</h2>
-            <h5 class="subtitle fw-normal" style="font-size: 1.2em; margin-bottom: 20px; line-height: 1.5;"> I am a final-year Computer Information Technology (CIT) student at Lethbridge Polytechnic, dedicated to mastering the art and science of web development. My passion lies in designing and developing innovative, user-centered websites that combine functionality with a seamless user experience.<br>With a strong foundation in modern web technologies and a commitment to continuous learning, I am eager to contribute my creativity, technical expertise, and problem-solving skills to shape the digital landscape.</h5>
-            </h4>
+            <h2 class="fw-bold mt-4" style="font-size: 1.5rem; color: #B2A4D4;">Who Am I?</h2>
+            <h5 class="subtitle fw-normal" style="font-size: 1em; line-height: 1.5;">
+              I am a final-year Computer Information Technology (CIT) student at Lethbridge Polytechnic, dedicated to mastering the art and science of web development. My passion lies in designing and developing innovative, user-centered websites that combine functionality with a seamless user experience.
+              <br><br>
+              With a strong foundation in modern web technologies and a commitment to continuous learning, I am eager to contribute my creativity, technical expertise, and problem-solving skills to shape the digital landscape.
+            </h5>
           </div>
         </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
         
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>  
 </body>
 </html>
