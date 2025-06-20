@@ -1,234 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Courses</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> 
-  <link href="https://fonts.googleapis.com/css2?family=Tahoma:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="icon" href="./Portfolio/zelicon.png" type="image/png">
-  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-  <style>
-    body {
-      background-color: #020123;
-      color: #fff;
-      margin: 0;
-      padding: 0;
-    }
-
-    /* Navbar */
-    /* .navbar {
-      width: 100%;
-      padding: 40px;
-      text-align: right;
-      font-weight: bold;
-      padding-right: 10px;
-      margin-left: -200px;
-      margin-top: 20px;
-    } */
-
-    .navbar a {
-      color: #B2A4D4;
-      text-decoration: none;
-      font-size: .9em;
-      font-weight: bold;
-      padding-right: 15px;
-      padding-left: 15px;
-    }
-
-    .navbar a:hover {
-      color: #FFFFFF;
-      text-decoration: none;
-    }
-
-    .nav a {
-  color: #B2A4D4;
-  text-decoration: none;
-  margin: 0 15px;
-  font-size: 1em;
-  font-weight: bold;
-}
-
-.nav-btn {
-  background: linear-gradient(to left, #010017, #030151);
-  color: #ffffff;
-  padding: 10px 15px;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: bold;
-  box-shadow: 0px 0px 10px #917ae0;
-}
-
-.nav-btn:hover {
-  background-color: #203354;
-  color: #ffffff;
-}
-
-    /* Logo */
-    .logo {
-      position: absolute;
-      top: 20px;
-      left: 250px;
-      font-size: 1em;
-      font-weight: bold;
-      color: #917ae0;
-    }
-
-    .logo img {
-      width: 120px;
-      height: auto;
-      display: block;
-      margin-bottom: 5px;
-    }
-
-    /* Header Styling */
-    h3 {
-      color: #917ae0;
-      font-size: 1.5em;
-      margin-bottom: 15px;
-      font-weight: bold;
-    }
-
-    /* Course content */
-    .courses-container {
-      width: 60%; 
-      margin: 0 auto;
-      padding: 30px;
-      background-color: #000000;
-      box-shadow: 0 4px 10px #23395d;
-      border-radius: 10px;
-      margin-top: 2px;
-      transition: transform 0.3s ease;
-    }
-
-    ul {
-      list-style-type: none;
-      padding-left: 0;
-    }
-
-    ul li {
-      font-size: 1.2em;
-      color: #B2A4D4;
-      margin-bottom: 30px;
-      background-color: #010123;
-      padding: 15px;
-      transition: transform 0.3s ease;
-    }
-
-    .courses-container h3 {
-      text-align: center;
-      margin-bottom: 20px;
-      transition: transform 0.3s ease;
-    }
-
-    /* course icons */
-    ul li i {
-      margin-right: 10px;
-      transition: transform 0.3s ease;
-    }
-
-   .courses-container ul li:hover {
-  transform: translateX(5px); 
-}
-
-  /* Responsive styles for smaller screens */
-@media screen and (max-width: 768px) {
-  .courses-container {
-    flex-direction: column; 
-    align-items: center;
-    gap: 30px;
-  }
-
-  .courses-container > div {
-    width: 90%;
-    max-width: 600px; 
-    margin-bottom: 20px; 
-  }
-
-  ul li {
-    font-size: 1.1em; 
-    padding: 8px; 
-  }
-}
-
-    /* Styling the list items */
-    /* ul {
-      list-style-type: none;
-      padding-left: 0;
-    }
-
-    ul li {
-  font-size: 1.2em;
-  color: #B2A4D4;
-  margin-bottom: 50px;
-  border-radius: 10px; 
-  background-color: #010123; 
-  padding: 10px; 
-  }
-*/
-  
-  .navbar-nav {
-  display: flex; 
-  justify-content: flex-end; 
-  align-items: center; 
-  gap: 5px;
-  list-style: none; 
-  padding: 0; 
-  margin: 0; 
-} 
-
-  /* Navbar adjustments */
- .navbar {
-    text-align: center;
-    padding: 30px 10px;
-    margin-left: 0;
-    font-size: .8em;
-  }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Tahoma:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="myPortfolio.css">   
+    <script src="script.js"></script>
+    <link rel="icon" type="image/png" href="./Portfolio/zelicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Courses</title>
 </head>
 
-<body class="bg-gradient-custom" style="font-family: 'Tahoma', sans-serif;">
-  <nav class="navbar navbar-expand-lg navbar-dark">
-    <div class="container-fluid">
-      <a class="logo" href="index.html">
-        <img src="./Portfolio/zorex.png" alt="Logo" style="width: 100px; height: auto;">
+<body class="skill-page">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+      <a href="index.html" class="navbar-brand">
+        <img src="./Portfolio/zelicon.png" alt="logo" width="35" height="35" />
       </a>
-      <button class="navbar-toggler" type="button" style="border: none; " data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
+        aria-controls="navbar" aria-label="Expand Navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      
-      <div class="collapse navbar-collapse " id="navbarSupportedContent">
+      <div class="collapse navbar-collapse justify-content-center" id="navbar">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="index.html">ABOUT ME</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="skills.html">SKILLS</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="courses.html">COURSES</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="projects.html">PROJECTS</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="experience.html">EXPERIENCE</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="testimonials.html">TESTIMONIALS</a>
-          </li>
-          <li class="nav-item">
-            <a href="hireme.html" class="nav-btn btn-hireme">Hire me</a>
-          </li>    
+          <li class="nav-item"><a class="nav-link" href="index.html">ABOUT ME</a></li>
+          <li class="nav-item"><a class="nav-link" href="skills.html">SKILLS</a></li>
+          <li class="nav-item"><a class="nav-link  active" href="courses.html">COURSES</a></li>
+          <li class="nav-item"><a class="nav-link" href="projects.html">PROJECTS</a></li>
+          <li class="nav-item"><a class="nav-link" href="experience.html">EXPERIENCE</a></li>
+          <li class="nav-item"><a class="nav-link" href="testimonials.html">TESTIMONIALS</a></li>
+          <li class="nav-item"><a href="hireme.html" class="btn btn-hireme">Hire me</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
-
-  <!-- courses Content -->
-  <div class="courses-container">
+  <!-- Courses Section -->
+  <section class="skill-section">
+    <div class="skills-container">
+      <div class="skill-card">
     <h3>RELEVANT COURSES</h3>
     <ul>
       <li><i class="fas fa-code"></i> HTML/CSS</li>
@@ -238,7 +51,10 @@
       <li><i class="fas fa-database"></i> Database Management</li>
     </ul>
 </div>
+  </section>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>  
 </body>
 </html>
+
