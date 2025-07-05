@@ -1,248 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projects</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> 
-  <link href="https://fonts.googleapis.com/css2?family=Tahoma:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="icon" href="./Portfolio/zelicon.png" type="image/png">
-  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-  <style>
-    body {
-      background-color: #020123;
-      color: #fff;
-      margin: 0;
-      padding: 0;
-    }
-
-    .navbar a {
-      color: #B2A4D4;
-      text-decoration: none;
-      font-size: 1em;
-      font-weight: bold;
-      padding-right: 15px;
-      padding-left: 15px;
-    }
-
-    .navbar a:hover {
-      color: #FFFFFF;
-      text-decoration: none;
-    }
-
-    .nav a {
-  color: #B2A4D4;
-  text-decoration: none;
-  margin: 0 15px;
-  font-size: 1em;
-  font-weight: bold;
-}
-
-.nav-btn {
-  background: linear-gradient(to left, #010017, #030151);
-  color: #ffffff;
-  padding: 10px 15px;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: bold;
-  box-shadow: 0px 0px 10px #917ae0;
-}
-
-.nav-btn:hover {
-  background-color: #203354;
-  color: #ffffff;
-}
-
-    /* Logo */
-    .logo {
-      position: absolute;
-      top: 20px;
-      left: 250px;
-      font-size: 1em;
-      font-weight: bold;
-      color: #917ae0;
-    }
-
-    .logo img {
-      width: 120px;
-      height: auto;
-      display: block;
-      margin-bottom: 5px;
-    }
-
-    /* Main content layout */
-    .container {
-      display: flex;
-      align-items: center; 
-      justify-content: center; 
-      height: 100vh;
-    }
-
-    .project-container {
-      display: flex;
-      align-items: center; 
-      gap: 80px; 
-    }
-
-    h3 {
-      color: #917ae0;
-      font-size: 2em;
-      margin-bottom: 20px;
-      font-weight: bold;
-   
-      padding-top: 100px;
-      margin-right: 900px;
-    }
-
-    .project-image {
-      max-width: 500px; 
-      border: 3px solid #917ae0;
-      border-radius: 0px;
-    }
-
-    .project-image:hover {
-  transform: translateY(-5px);
-}
-
-.navbar-nav {
-  display: flex; 
-  justify-content: flex-end; 
-  align-items: center; 
-  gap: 10px;
-  list-style: none; 
-  padding: 0; 
-  margin: 0; 
-} 
-
-  /* Navbar adjustments */
- .navbar {
-    text-align: center;
-    padding: 30px 10px;
-    margin-left: 0;
-    font-size: .9em;
-  }
-  
-
-  @media screen and (max-width: 768px) {
-.project-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center; 
-  margin-top: 20px;
-}
-
-.project-image {
-  max-width: 90%; 
-  border: 3px solid #917ae0;
-  border-radius: 0px;
-  margin-bottom: 10px;
-}
-
-  }
-
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Tahoma:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="myPortfolio.css">   
+    <script src="script.js"></script>
+    <link rel="icon" type="image/png" href="./Portfolio/zelicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Projects</title>
 </head>
 
-<body class="bg-gradient-custom" style="font-family: 'Tahoma', sans-serif;">
-  <nav class="navbar navbar-expand-lg navbar-dark">
-    <div class="container-fluid">
-      <a class="logo" href="index.html">
-        <img src="./Portfolio/zorex.png" alt="Logo" style="width: 100px; height: auto;">
-      </a>
-      <button class="navbar-toggler" type="button" style="border: none; " data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<body class="skill-page">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+<a href="index.html" class="navbar-brand"><img src="./Portfolio/zorex.png" alt="logo" width="100" height="100"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
+        aria-controls="navbar" aria-label="Expand Navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      
-      <div class="collapse navbar-collapse " id="navbarSupportedContent">
+      <div class="collapse navbar-collapse justify-content-center" id="navbar">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="index.html">ABOUT ME</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="skills.html">SKILLS</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="courses.html">COURSES</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="projects.html">PROJECTS</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="experience.html">EXPERIENCE</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="testimonials.html">TESTIMONIALS</a>
-          </li>
-          <li class="nav-item">
-            <a href="hireme.html" class="nav-btn btn-hireme">Hire me</a>
-          </li>    
+          <li class="nav-item"><a class="nav-link" href="index.html">ABOUT ME</a></li>
+          <li class="nav-item"><a class="nav-link" href="skills.html">SKILLS</a></li>
+          <li class="nav-item"><a class="nav-link" href="courses.html">COURSES</a></li>
+          <li class="nav-item"><a class="nav-link  active" href="projects.html">PROJECTS</a></li>
+          <li class="nav-item"><a class="nav-link" href="experience.html">EXPERIENCE</a></li>
+          <li class="nav-item"><a class="nav-link" href="testimonials.html">TESTIMONIALS</a></li>
+          <li class="nav-item"><a href="hireme.html" class="btn btn-hireme">Hire me</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <div class="container">
-    <div>
-      <h3>WEBSITE PROJECTS</h3>
-      <div class="project-container">
-        <div>
-        <a href =""><img src="./Portfolio/za.jpg" alt="za" class="project-image" style="width: 400px; height: auto;"></a> 
-          <br><br>
-          <a href ="https://semilogoodunowo.wixsite.com/zkrochet" style="text-decoration: none;"><p class="project-title" style="font-size: 1.2em; font-weight: bold; color: #B2A4D4;  text-align: center;">Zelda Academy</p></a>
-          <a href ="desc.html#zac" style="text-decoration:double;"><p class="project-title" style="font-size: 1.2em; color: white; align-items: center;  text-align: center; border: 3px solid #B2A4D4; ">Project Description</p></a>
-        </div>
-        
-        <div>
-            <a href ="https://semilogoodunowo.wixsite.com/zkrochet" target="_blank"><img src="./Portfolio/zk.jpg" alt="zk" class="project-image" style="width: 300px; height: auto;"></a> 
-              <br><br>
-              <a href ="https://semilogoodunowo.wixsite.com/zkrochet" target="_blank" style="text-decoration: none;"><p class="project-title" style="font-size: 1.2em; font-weight: bold; color: #B2A4D4;  text-align: center;">ZKrochet</p></a>
-              <a href ="desc.html#zkrochet" style="text-decoration:double;"><p class="project-title" style="font-size: 1.2em; color: white; align-items: center;  text-align: center; border: 3px solid #B2A4D4; ">Project Description</p></a>
-            </div>
+ <!-- Projects Section --> <!-- Websites -->
+<section class="home-projects mt-3 mb-5">
+  <div class="container mt-4">
+    <h2 class="text-start mb-4" style="color:  #917ae0; font-weight: 800;">WEBSITE PROJECTS</h2>
 
-        <div>
-        <a href ="https://shemmy1803-github-io.vercel.app/index.html" target="_blank"><img src="./Portfolio/folio.jpg" alt="folio" class="project-image"  style="width: 400px; height: auto;"></a> 
-          <br><br>
-          <a href ="https://shemmy1803-github-io.vercel.app/index.html" target="_blank" style="text-decoration: none;"><p class="project-title" style="font-size: 1.2em; font-weight: bold; color: #B2A4D4; text-align: center;">Website Porfolio</p></a>
-          <a href ="desc.html#folio" style="text-decoration:double;"><p class="project-title" style="font-size: 1.2em; color: white; align-items: center;  text-align: center; border: 3px solid #B2A4D4; ">Project Description</p></a>
+    <div class="row g-5 justify-content-start">
+      <!-- Zelda Academy -->
+      <div class="col-md-4">
+        <div class="card h-100 border-0" style="background-color: transparent;">
+          <img src="./Portfolio/za.jpg" class="card-img-top" alt="Zelda Academy">
+          <div class="card-body d-flex flex-column">
+            <h4 class="card-title text-center mb-4" style="color: #B2A4D4; font-weight: bold;">Zelda Academy</h3>
+            <div class="d-flex justify-content-center gap-1 mt-2">
+              <a href="https://semilogoodunowo.wixsite.com/zkrochet" target="_blank" class="btn btn-outline-custom btn-sm" style="min-width: 150px;">Visit Site</a>
+              <a href="desc.html#zac" class="btn btn-outline-custom btn-sm" style="min-width: 200px;">Project Description</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ZKrochet -->
+      <div class="col-md-4">
+        <div class="card h-100 border-0" style="background-color: transparent;">
+          <img src="./Portfolio/zk.jpg" class="card-img-top" alt="ZKrochet">
+          <div class="card-body d-flex flex-column">
+            <h4 class="card-title text-center mb-4" style="color: #B2A4D4; font-weight: bold;">ZKrochet</h3>
+            <div class="d-flex justify-content-center gap-1 mt-2">
+              <a href="https://semilogoodunowo.wixsite.com/zkrochet" target="_blank" class="btn btn-outline-custom btn-sm" style="min-width: 150px;">Visit Site</a>
+              <a href="desc.html#zkrochet" class="btn btn-outline-custom btn-sm" style="min-width: 200px;">Project Description</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Portfolio Website -->
+      <div class="col-md-4">
+        <div class="card h-100 border-0" style="background-color: transparent;">
+          <img src="./Portfolio/folio.png" class="card-img-top" alt="Portfolio Website">
+          <div class="card-body d-flex flex-column">
+            <h4 class="card-title text-center mb-4" style="color: #B2A4D4; font-weight: bold;">Website Portfolio</h3>
+            <div class="d-flex justify-content-center gap-1 mt-2">
+              <a href="https://shemmy1803-github-io.vercel.app/index.html" target="_blank" class="btn btn-outline-custom btn-sm" style="min-width: 150px;">Visit Site</a>
+              <a href="desc.html#folio" class="btn btn-outline-custom btn-sm" style="min-width: 200px;">Project Description</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
+</section>
 
-  <div class="container">
-    <div>
-      <h3>PROGRAMMING PROJECT</h3>
-      <div class="project-container"  style="gap: 20px;">
-        <div>
-       <a href ="./Portfolio/surv1.png"><img src="./Portfolio/surv1.png" alt="za" class="project-image" style="width: 1000px; height: auto; border: none;"></a>
-          <br><br>
-          <br><p style="text-decoration: none;"><p class="project-title" style="font-size: 1.2em; font-weight: bold; color: #B2A4D4;  text-align: center;">Survey.php</p>
-          <a href ="desc.html#prog" style="text-decoration:double;"><p class="project-title" style="font-size: 1.2em; color: white; align-items: center;  text-align: center; border: 3px solid #B2A4D4;">Project Description</p></a>
-        </div>
-        
-        <div>
-          <a href ="./Portfolio/surv2.png"><img src="./Portfolio/surv2.png" alt="zk" class="project-image" style="width: 400px; height: auto; margin-top:-150px; border: none;"></a>
-            </div>
+<!-- Programming -->
+<section class="home-projects mt-3 mb-5">
+  <div class="container mt-4">
+    <h2 class="text-start mb-4" style="color:  #917ae0; font-weight: 800;">PROGRAMMING PROJECT</h2>
 
-        <div>
-          <a href ="./Portfolio/surv3.png"><img src="./Portfolio/surv3.png" alt="folio" class="project-image"  style="width: 500px; height: auto; margin-top:-180px; border: none;"></a>
-        </div>
-      </div>
+<div style="display: flex; gap: 20px; align-items: flex-start; flex-wrap: wrap;">
+    <!-- Left Big Image and Info -->
+    <div style="flex: 2;">
+      <a href="./Portfolio/surv1.png">
+        <img src="./Portfolio/surv1.png" alt="za" style="width: 100%; height: auto; border: none;">
+      </a>
+
+      <!-- Title and Button -->
+      <h4 class="mt-3 mb-3" style="color: #B2A4D4; font-weight: bold; display: inline-block; margin-left: 5px;">Survey.php</h4>
+      <a href="desc.html#prog" class="btn btn-outline-custom btn-sm" style="min-width: 200px; display: inline-block; margin-left: 5px;">Project Description</a>
+    </div>
+
+    <!-- Right Two Small Stacked Images -->
+    <div style="flex: 1; display: flex; flex-direction: column; gap: 20px;">
+      <a href="./Portfolio/surv2.png">
+        <img src="./Portfolio/surv2.png" alt="zk" style="width: 100%; height: auto; border: none;">
+      </a>
+      <a href="./Portfolio/surv3.png">
+        <img src="./Portfolio/surv3.png" alt="folio" style="width: 100%; height: auto; border: none;">
+      </a>
     </div>
   </div>
+</div>
+</section>
 
-  <div class="container">
-    <div>
-      <h3 style="margin-top:-150px;">PERSONAL PROJECTS</h3>
-      <div class="project-container">
-        <div>
-        <a href ="art.html"><img src="./Portfolio/art.jpg" alt="artwork" class="project-image" style="width: 300px; height: auto;"></a>
-          <br><br>
-          <a href ="art.html" style="text-decoration: none;"><p class="project-title" style="font-size: 1.2em; font-weight: bold; color: #B2A4D4;  text-align: center;">Art Work</p></a>
+ <!-- Personal -->
+<section class="home-projects mt-3 mb-5">
+  <div class="container mt-4">
+    <h2 class="text-start mb-4" style="color:  #917ae0; font-weight: 800;">PERSONAL PROJECTS</h2>
+
+    <div class="row g-5 justify-content-start">
+      <!-- Zelda Academy -->
+      <div class="col-md-4">
+        <div class="card h-100 border-0" style="background-color: transparent;">
+          <img src="./Portfolio/art.jpg" class="card-img-top" alt="artWork">
+          <div class="card-body d-flex flex-column">
+            <h4 class="card-title text-center mb-4" style="color: #B2A4D4; font-weight: bold;">ArtWork</h3>
+            <div class="d-flex justify-content-center gap-1 mt-2">
+              <a href="art.html" class="btn btn-outline-custom btn-sm" style="min-width: 200px;">See more</a>
+            </div>
+          </div>
         </div>
       </div>
+    </section>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>  
 </body>
 </html>
+
