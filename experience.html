@@ -1,301 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Experience</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> 
-  <link href="https://fonts.googleapis.com/css2?family=Tahoma:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="icon" href="./Portfolio/zelicon.png" type="image/png">
-  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-  <style>
-    
-    body {
-      background-color: #020123;
-      color: #fff;
-      margin: 0;
-      padding: 0;
-    }
-
-
-    .navbar a {
-    color: #B2A4D4;
-    text-decoration: none;
-    font-size: .9em;
-    font-weight: bold;
-    padding-right: 15px;
-    padding-left: 15px;
-}
-
-.navbar a:hover {
-  color: #FFFFFF;
-  text-decoration: none;
-}
-
-.nav a {
-  color: #B2A4D4;
-  text-decoration: none;
-  margin: 0 15px;
-  font-size: 1em;
-  font-weight: bold;
-}
-
-.nav-btn {
-  background: linear-gradient(to left, #010017, #030151);
-  color: #ffffff;
-  padding: 10px 15px;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: bold;
-  box-shadow: 0px 0px 10px #917ae0;
-}
-
-.nav-btn:hover {
-  background-color: #203354;
-  color: #ffffff;
-}
- 
-    
-/* Logo */
-.logo {
-  position: absolute;
-  top: 20px;
-  left: 250px;
-  font-size: 1em;
-  font-weight: bold;
-  color: #917ae0;
-}
-
-.logo img {
-  width: 120px;
-  height: auto;
-  display: block;
-  margin-bottom: 5px;
-  padding-top: 30px;
-}
-h1 {
-      color: #917ae0;
-      font-size: 1.5em;
-      padding-bottom: 20px;
-      font-weight: bold;
-      padding-top: 8px;
-    }
-
-    .job-container {
-      margin-top: 30px; 
-      max-width: 60%;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    .job-title {
-      font-weight: bold;
-      font-size: 1.5rem;
-      color: #2f65bb;
-      /* #23395d */
-    }
-
-    .job-title:hover {
-      color:#23395d; 
-    }
-
-    .job-title a {
-    color: inherit;
-    text-decoration: none; 
-    }
-
-    .job-description {
-      margin-top: 10px;
-      line-height: 1.6;
-    }
-
-    .company-logo {
-      width: 17%; 
-      height: auto;
-      margin-right: 15px;
-    }
-
-    
-  .navbar-nav {
-  display: flex; 
-  justify-content: flex-end; 
-  align-items: center; 
-  gap: 10px;
-  list-style: none; 
-  padding: 30px; 
-  margin: 0; 
-} 
-
-  /* Navbar adjustments */
- .navbar {
-    text-align: center;
-    padding: 30px 10px;
-    margin-left: 0;
-    font-size: 1em;
-  }
-
-  /* See more button */
-  .more-btn {
-  background-color: #23395d;
-  color: #fff;
-  padding: 5px 10px;
-  text-decoration: none;
-  font-size: 0.9em;
-  border-radius: 5px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-  margin-top: 10px;
-  margin-left: 500px;
-  transform: translateY(0); 
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
-  float: right; 
-}
-
-.more-btn:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
-}
-
-    /* Responsive styles for smaller screens */
-@media screen and (max-width: 768px) {
-  .job-container {
-    flex-direction: column; 
-    align-items: center;
-    gap: 30px;
-  }
-
-  .job-container > div {
-    width: 90%;
-    max-width: 600px; 
-    margin-bottom: 20px; 
-  }
-
-  ul li {
-    font-size: 1.1em; 
-    padding: 8px; 
-  }
-}
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Tahoma:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="myPortfolio.css">   
+    <script src="script.js"></script>
+    <link rel="icon" type="image/png" href="./Portfolio/zelicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Experience</title>
 </head>
-<body class="bg-gradient-custom" style="font-family: 'Tahoma', sans-serif;">
-    <nav class="navbar navbar-expand-lg navbar-dark">
-      <div class="container-fluid">
-        <a class="logo" href="index.html">
-          <img src="./Portfolio/zorex.png" alt="Logo" style="width: 100px; height: auto;">
-        </a>
-        <button class="navbar-toggler" type="button" style="border: none; " data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        
-        <div class="collapse navbar-collapse " id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="index.html">ABOUT ME</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="skills.html">SKILLS</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="courses.html">COURSES</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="projects.html">PROJECTS</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="experience.html">EXPERIENCE</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="testimonials.html">TESTIMONIALS</a>
-            </li>
-            <li class="nav-item">
-              <a href="hireme.html" class="nav-btn btn-hireme">Hire me</a>
-            </li>    
-          </ul>
-        </div>
-      </div>
-    </nav>
 
-  <div class="container">
-    <h1 class="text-center mt-4 fw-bold">JOB EXPERIENCE</h1>
+<body class="skill-page">
 
-    <div class="job-container d-flex align-items-start">
-      <img src="./Portfolio/cutco.jpg" class="rounded float-start company-logo" alt="company logo">
-      <div>
-        <p class="job-title"> <a href="more.html">Cutco Cutlery</a></p>
-        <p class="job-description">
-          <p>
-            <span style="font-weight: bold;">May 2024 - July 2024</span> <br>
-            <span style="font-weight: bold; color:#B2A4D4;">SALES REPRESENTATIVE</span> <br>
-             Calgary, AB.
-          </p>          
-        </p>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+      <a href="index.html" class="navbar-brand"><img src="./Portfolio/zorex.png" alt="logo" width="100" height="100"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
+        aria-controls="navbar" aria-label="Expand Navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbar">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">ABOUT ME</a></li>
+          <li class="nav-item"><a class="nav-link" href="skills.html">SKILLS</a></li>
+          <li class="nav-item"><a class="nav-link" href="courses.html">COURSES</a></li>
+          <li class="nav-item"><a class="nav-link" href="projects.html">PROJECTS</a></li>
+          <li class="nav-item"><a class="nav-link active" href="experience.html">EXPERIENCE</a></li>
+          <li class="nav-item"><a class="nav-link" href="testimonials.html">TESTIMONIALS</a></li>
+          <li class="nav-item"><a href="hireme.html" class="btn btn-hireme">Hire me</a></li>
+        </ul>
       </div>
     </div>
+  </nav>
 
-    <h1 class="text-center mt-4 fw-bold">VOLUNTEER EXPERIENCE</h1>
-    <div class="job-container d-flex align-items-start">
-      <img src="./Portfolio/ymca.png" class="rounded float-start company-logo" alt="company logo">
-      <div>
-        <p class="job-title"> <a href="more.html#ymca">YMCA Calgary</a></p>
-        <p class="job-description">
-          <p>
-            <span style="font-weight: bold;">March 2021 - June 2021</span> <br>
-            <span style="font-weight: bold; color:#B2A4D4;">EARLY CHILDHOOD EDUCATOR</span> <br>
-             Calgary, AB.
-          </p>             
-        </p>
-      </div>
-    </div>
-
-    <div class="job-container d-flex align-items-start">
-      <img src="./Portfolio/gsv.jpg" class="rounded float-start company-logo" alt="company logo">
-      <div>
-        <p class="job-title"> <a href="more.html#gsv">Grand Seton Village</a></p>
-        <p class="job-description">
-          <p>
-            <span style="font-weight: bold;">July 2024 - August 2024</span> <br>
-            <span style="font-weight: bold; color:#B2A4D4;">TECH-SUPPORT SPECIALIST</span> <br>
-             Calgary, AB.
-          </p>   
-          </p>       
-        </p>
-      </div>
-    </div>
-
-    <h1 class="text-center mt-4 fw-bold">EXTRACURRICULAR EXPERIENCE</h1>
-    <div class="job-container d-flex align-items-start">
-      <img src="./Portfolio/hobs.jpg" class="rounded float-start company-logo" alt="company logo">
-      <div>
-        <p class="job-title"> <a href="more.html#hobs">HOBS</a></p>
-        <p class="job-description">
-          <p>
-            <span style="font-weight: bold;">July 2014 - July 2021</span> <br>
-            <span style="font-weight: bold; color:#B2A4D4;">BAKER</span> <br>
-            Port Harcourt, Nigeria.
-          </p>             
-        </p>
-      </div>
-    </div>
-
-    <div class="job-container d-flex align-items-start">
-      <img src="./Portfolio/weave.jpg" class="rounded float-start company-logo" alt="company logo">
-      <div>
-        <p class="job-title"> <a href="more.html#zkay">ZKrochet</a></p>
-        <p class="job-description">
-          <p>
-            <span style="font-weight: bold;">December 2021 - Present</span> <br>
-            <span style="font-weight: bold; color:#B2A4D4;">CROCHET ARTIST</span> <br>
-             Calgary, AB.
-          </p>   
-            <a href="more.html#extra" class="more-btn">
-              See more...
-            </a>
-          </p>       
-        </p>
+  <!-- Experiences -->
+<div class="container my-5" id="experience">
+  <h3 class="text-center fw-bold" style="color: #917ae0;">JOB EXPERIENCE</h3>
+  <br>
+  <div class="job-container">
+    <img src="./Portfolio/cutco.jpg" class="company-logo rounded" alt="Cutco logo">
+    <div>
+      <p class="job-title"><a href="more.html">Cutco Cutlery</a></p>
+      <div class="job-description">
+        <strong>May 2024 - July 2024</strong><br>
+        <span class="job-position fw-bold">SALES REPRESENTATIVE</span><br>
+        Calgary, AB.
       </div>
     </div>
   </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <div class="job-container">
+    <img src="./Portfolio/kumon.png" class="company-logo rounded" alt="Kumon logo">
+    <div>
+      <p class="job-title"><a href="more.html#kumon">KUMON</a></p>
+      <div class="job-description">
+        <strong>June 2025 - Present</strong><br>
+        <span class="job-position fw-bold">INSTRUCTOR</span><br>
+        Calgary, AB.
+      </div>
+    </div>
+  </div>
+
+  <h3 class="text-center fw-bold mt-5" style="color: #917ae0;">VOLUNTEER EXPERIENCE</h3>
+  <br>
+  <div class="job-container">
+    <img src="./Portfolio/ymca.png" class="company-logo rounded" alt="YMCA logo">
+    <div>
+      <p class="job-title"><a href="more.html#ymca">YMCA Calgary</a></p>
+      <div class="job-description">
+        <strong>March 2021 - June 2021</strong><br>
+        <span class="job-position fw-bold">EARLY CHILDHOOD EDUCATOR</span><br>
+        Calgary, AB.
+      </div>
+    </div>
+  </div>
+
+  <div class="job-container">
+    <img src="./Portfolio/gsv.jpg" class="company-logo rounded" alt="GSV logo">
+    <div>
+      <p class="job-title"><a href="more.html#gsv">Grand Seton Village</a></p>
+      <div class="job-description">
+        <strong>July 2024 - August 2024</strong><br>
+        <span class="job-position fw-bold">TECH-SUPPORT SPECIALIST</span><br>
+        Calgary, AB.
+      </div>
+    </div>
+  </div>
+
+  <div class="job-container">
+    <img src="./Portfolio/sadaiv.png" class="company-logo rounded" alt="Sadaiv logo">
+    <div>
+      <p class="job-title"><a href="more.html#sadaiv">Sadaiv Education Limited</a></p>
+      <div class="job-description">
+        <strong>April 2025 - June 2025</strong><br>
+        <span class="job-position fw-bold">WEB DEVELOPMENT INTERN&nbsp;<span style="color: red; font-size: 0.8rem;">(COOP)</span></span><br>
+        Lethbridge, AB.
+      </div>
+    </div>
+  </div>
+
+  <h3 class="text-center fw-bold mt-5" style="color: #917ae0;">EXTRACURRICULAR EXPERIENCE</h3>
+  <br>
+  <div class="job-container">
+    <img src="./Portfolio/hobs.jpg" class="company-logo rounded" alt="HOBS logo">
+    <div>
+      <p class="job-title"><a href="more.html#hobs">HOBS</a></p>
+      <div class="job-description">
+        <strong>July 2014 - July 2021</strong><br>
+        <span class="job-position fw-bold">BAKER</span><br>
+        Port Harcourt, Nigeria.
+      </div>
+    </div>
+  </div>
+
+<div class="job-container">
+  <img src="./Portfolio/weave.jpg" class="company-logo rounded" alt="ZKrochet logo">
+  <div class="job-text">
+    <p class="job-title"><a href="more.html#zkay">ZKrochet</a></p>
+    <div class="job-description">
+      <strong>December 2021 - Present</strong><br>
+      <span class="job-position fw-bold">CROCHET ARTIST</span><br>
+      Calgary, AB.
+    </div>
+  </div>
+</div>
+
+<div class="see-more-container">
+  <a href="more.html#extra">See more...</a>
+</div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>  
 </body>
 </html>

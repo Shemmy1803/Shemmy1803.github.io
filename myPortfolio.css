@@ -456,7 +456,6 @@ background-color: transparent;
 /* Desc.html */
 .more-container {
   width: 85%; 
-  flex: 1 1 80%;
   margin: 0 auto;
   padding: 30px;
   background-color: #000000;
@@ -545,4 +544,231 @@ transition: transform 0.3s ease;
   transform: scale(1.05);
 }
 
+/* Experience.html */
+.job-container {
+  max-width: 800px;
+  margin: 0 auto 2rem auto;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px; 
+}
+
+.company-logo {
+  width: 120px;
+  height: auto;
+  margin-top: 4px;
+  object-fit: contain;
+}
+
+.job-title {
+  font-weight: bold;
+  font-size: 1.25rem;
+  color: #2f65bb;
+  margin-bottom: 0.3rem;
+   font-size: 1.5rem;
+}
+
+.job-title a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.job-title a:hover {
+  color: #23395d;
+}
+
+.job-position {
+  color:#B2A4D4;
+  font-weight: bold;
+}
+
+
+.job-description {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.see-more-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1rem; 
+}
+
+.see-more-container a {
+  padding: 0.3rem 0.7rem;
+  background-color: #23395d;
+  color: white;
+  border-radius: 0.25rem;
+  text-decoration: none;
+  font-size: 0.875rem;
+}
+
+.see-more-container a:hover {
+  background-color: #1b2f4a;
+}
+
+/* More.html */
+h3 {
+    color: #917ae0;
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    font-weight: bold;
+  }
+
+  .more-container {
+    width: 85%; 
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #000000;
+    box-shadow: 0 4px 10px #23395d;
+    border-radius: 10px;
+    margin-top: 2px;
+    transition: transform 0.3s ease;
+    margin-bottom: 20px;
+    line-height: 1.8;
+  }
+
+    
+.extra-images {
+  display: flex;
+  justify-content: left;
+  gap: 20px;
+  margin-top: 15px;
+}
+
+.extra-image {
+  width: 150px;
+  height: 200px;
+  border-radius: 5px; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.icon {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.icon li {
+  font-size: 1.2em;
+  color: #B2A4D4;
+  margin-bottom: 30px;
+  background-color: #010123;
+  padding: 10px;
+  transition: transform 0.3s ease;
+  text-align: right;
+}
+
+.icon li:hover {
+  transform: translateX(5px);
+}
+
+
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    ul li { 
+      margin-bottom: 30px;
+    }
+
+    .more-container h3 {
+      text-align: left;
+      margin-bottom: 20px;
+
+    }
+
+   
+    ul li i {
+      margin-right: 10px;
+    
+    }
+
+
+/* Testimonial.html */
+#testimonialCarousel {
+  position: relative;
+  height: auto;
+  padding-bottom: 110px;
+}
+
+.carousel-inner {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.carousel-item {
+  text-align: center;
+}
+
+.testimonial-wrapper {
+  background-color: #081727;
+  border-radius: 10px;
+  padding: 1.5rem;
+}
+
+.testimonial-text {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: white;
+}
+
+.testimonial-author {
+  font-size: 0.95rem;
+  font-style: italic;
+  color: #B2A4D4;
+}
+
+.carousel-item img {
+  margin-bottom: 1rem;
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+}
+
+.carousel-indicators {
+  bottom: 20px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 6%;
+}
+
+/* HireMe.html */
+h2 {
+  color: #917ae0;
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.resume-wrapper {
+  text-align: center;
+}
+
+.resume-image {
+  max-width: 650px;
+  width: 100%;
+  border: 3px solid #917ae0;
+  border-radius: 0;
+}
+
+.download-btn {
+  background-color: #23395d;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 1em;
+  border-radius: 5px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.download-btn:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}
 
