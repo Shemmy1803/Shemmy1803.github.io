@@ -525,22 +525,24 @@ font-weight: bold;
 
 /* Art.html */
 .art-container {
-    display: flex;
-    align-items: center; 
-    gap: 50px; 
-  }
-
-  .container h4 {
-    color:#B2A4D4;
-    font-style: italic;
-  }
-
-  .art-image {
-    border-radius: 10px;
-    box-shadow: 0px 0px 20px #917ae0;
-  }
-
-  .art-image:hover {
-transform: scale(1.05);
+  display: flex;
+  align-items: center; 
+  gap: 50px; 
 }
+
+.container h4 {
+  color:#B2A4D4;
+  font-style: italic;
+}
+
+.art-image {
+border-radius: 10px;
+box-shadow: 0 0 20px #917ae0;
+transition: transform 0.3s ease;
+}
+
+.art-image:hover {
+  transform: scale(1.05);
+}
+
 
