@@ -455,8 +455,8 @@ background-color: transparent;
 
 /* Desc.html */
 .more-container {
-  width: 80%; 
-  /* flex: 1 1 80%; */
+  width: 85%; 
+  flex: 1 1 80%;
   margin: 0 auto;
   padding: 30px;
   background-color: #000000;
